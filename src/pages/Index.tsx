@@ -20,7 +20,7 @@ const Index = () => {
     return cleanup;
     
     // Add metadata for better SEO
-    document.title = "Auto Detailing | Estética Automotiva Premium";
+    document.title = "Vip Lava Car | Estética Automotiva Erechim - RS";
   }, []);
 
   return (
@@ -32,45 +32,45 @@ const Index = () => {
       <div className="py-16 section-black">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-autolux-white">
-            Por que escolher a <span className="text-autolux-red">Auto Detailing</span>?
+            Por que escolher a <span className="text-[#FDCC01]">Vip Lava Car</span>?
           </h2>
-          <div className="w-24 h-1 bg-autolux-red mx-auto mb-12"></div>
+          <div className="w-24 h-1 bg-[#FDCC01] mx-auto mb-12"></div>
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card-white p-8 hover:scale-105 transition-transform duration-300">
               <div className="mb-4">
                 <img 
                   src="https://img.freepik.com/free-photo/car-wash-detailing-station_1303-22325.jpg" 
-                  alt="Profissionais Qualificados" 
+                  alt="Serviço Completo" 
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
               </div>
-              <h3 className="text-xl font-bold mb-2">Profissionais Qualificados</h3>
-              <p className="text-gray-700">Nossa equipe possui certificação internacional em estética automotiva de alto padrão.</p>
+              <h3 className="text-xl font-bold mb-2">Serviço Completo</h3>
+              <p className="text-gray-700">Da limpeza básica à estética avançada, incluindo troca de filtro do ar condicionado e manutenção.</p>
             </div>
             
             <div className="card-white p-8 hover:scale-105 transition-transform duration-300">
               <div className="mb-4">
                 <img 
                   src="https://img.freepik.com/premium-photo/wash-service-hand-car-vehicle-garage-cleaning-auto-maintenance-transportation-automobile-detailing-care_163305-256240.jpg" 
-                  alt="Produtos Premium" 
+                  alt="Estética Avançada" 
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
               </div>
-              <h3 className="text-xl font-bold mb-2">Produtos Premium</h3>
-              <p className="text-gray-700">Utilizamos apenas produtos importados de primeira linha para o cuidado do seu veículo.</p>
+              <h3 className="text-xl font-bold mb-2">Estética Avançada</h3>
+              <p className="text-gray-700">Espelhamento e polimento profissional que devolvem o brilho original do seu veículo.</p>
             </div>
             
             <div className="card-white p-8 hover:scale-105 transition-transform duration-300">
               <div className="mb-4">
                 <img 
                   src="https://img.freepik.com/free-photo/happy-black-car-repairman-young-businessman-handshaking-auto-repair-shop_637285-4249.jpg" 
-                  alt="Satisfação Garantida" 
+                  alt="Reconhecimento Local" 
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
               </div>
-              <h3 className="text-xl font-bold mb-2">Satisfação Garantida</h3>
-              <p className="text-gray-700">Oferecemos garantia em todos os nossos serviços para sua total tranquilidade.</p>
+              <h3 className="text-xl font-bold mb-2">Reconhecimento Local</h3>
+              <p className="text-gray-700">Avaliação 4.6 estrelas no Google, comprovando a qualidade e confiança dos nossos clientes.</p>
             </div>
           </div>
         </div>

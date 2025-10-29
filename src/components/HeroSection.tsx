@@ -39,15 +39,15 @@ const HeroSection: React.FC = () => {
       <div className="container mx-auto px-4 z-20 pt-20">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in text-autolux-white leading-tight">
-            Transforme Seu Carro.<br />
-            <span className="text-autolux-red">Valorize Seu Estilo.</span>
+            Vip Lava Car: O Cuidado Completo<br />
+            <span className="text-[#FDCC01]">que Seu Veículo Merece em Erechim.</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 animate-fade-in-slow text-gray-300 font-light">
-            Especialistas em Estética Automotiva de Alto Padrão em São Paulo.
+            Estética Automotiva, Limpeza Profunda e Manutenção. Qualidade e Confiança Comprovadas.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-slow">
-            <Button size="lg" className="red-gradient hover:opacity-90 text-white font-medium px-8 py-6 text-lg shadow-[0_4px_20px_rgba(217,4,41,0.5)]" onClick={scrollToContact}>
-              <MessageSquare className="mr-2 h-5 w-5" /> Solicitar Avaliação Gratuita
+            <Button size="lg" className="gold-gradient hover:opacity-90 text-black font-medium px-8 py-6 text-lg shadow-[0_4px_20px_rgba(253,204,1,0.5)]" onClick={scrollToContact}>
+              <MessageSquare className="mr-2 h-5 w-5" /> Agende Seu Horário
             </Button>
             <Button size="lg" variant="outline" className="bg-white/10 border-white text-autolux-white hover:bg-white/20 font-medium px-8 py-6 text-lg" onClick={scrollToServices}>
               Conheça Nossos Serviços
