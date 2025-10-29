@@ -84,9 +84,9 @@ const TestimonialsSection: React.FC = () => {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-3 reveal-on-scroll">
-            O Que Nossos <span className="text-autolux-red">Clientes</span> Dizem
+            O Que Nossos <span className="text-primary">Clientes</span> Dizem
           </h2>
-          <div className="w-24 h-1 bg-autolux-red mx-auto reveal-on-scroll mb-6"></div>
+          <div className="w-24 h-1 bg-primary mx-auto reveal-on-scroll mb-6"></div>
           <p className="text-gray-300 max-w-2xl mx-auto reveal-on-scroll">
             Excelência reconhecida por nossos clientes. Confira os depoimentos de quem confiou seus veículos aos nossos cuidados.
           </p>
@@ -105,10 +105,10 @@ const TestimonialsSection: React.FC = () => {
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={testimonial.id} className="md:basis-1/2 lg:basis-1/3 pl-4">
                   <div className="h-full">
-                    <Card className="bg-[#1a1a1a] border border-autolux-gray/20 p-6 h-full shadow-lg hover:border-autolux-red/30 transition-all duration-300">
+                    <Card className="bg-[#1a1a1a] border border-autolux-gray/20 p-6 h-full shadow-lg hover:border-primary/30 transition-all duration-300">
                       <div className="flex items-center mb-4">
                         <div className="mr-4">
-                          <div className="h-14 w-14 rounded-full overflow-hidden border-2 border-autolux-red">
+                          <div className="h-14 w-14 rounded-full overflow-hidden border-2 border-primary">
                             <img 
                               src={testimonial.avatar} 
                               alt={testimonial.name} 
@@ -124,8 +124,8 @@ const TestimonialsSection: React.FC = () => {
                               <Star
                                 key={i}
                                 size={14}
-                                fill={i < testimonial.rating ? "#d90429" : "none"}
-                                stroke={i < testimonial.rating ? "#d90429" : "#5a5a5a"}
+                                fill={i < testimonial.rating ? "#FDCC01" : "none"}
+                                stroke={i < testimonial.rating ? "#FDCC01" : "#5a5a5a"}
                                 className="mr-1"
                               />
                             ))}
@@ -139,7 +139,7 @@ const TestimonialsSection: React.FC = () => {
               ))}
             </CarouselContent>
             <div className="flex items-center justify-center mt-8 gap-2">
-              <CarouselPrevious className="static bg-black/50 border-autolux-red/30 hover:bg-autolux-red/80 transform-none translate-y-0 h-10 w-10" />
+              <CarouselPrevious className="static bg-black/50 border-primary/30 hover:bg-primary/80 transform-none translate-y-0 h-10 w-10" />
               <div className="flex justify-center space-x-2">
                 {testimonials.map((_, index) => (
                   <Button
@@ -147,7 +147,7 @@ const TestimonialsSection: React.FC = () => {
                     variant="outline"
                     size="icon"
                     className={`h-2.5 w-2.5 p-0 rounded-full border-0 ${
-                      current === index ? 'bg-autolux-red' : 'bg-autolux-gray/30'
+                      current === index ? 'bg-primary' : 'bg-autolux-gray/30'
                     }`}
                     onClick={() => api?.scrollTo(index)}
                   >
@@ -155,7 +155,7 @@ const TestimonialsSection: React.FC = () => {
                   </Button>
                 ))}
               </div>
-              <CarouselNext className="static bg-black/50 border-autolux-red/30 hover:bg-autolux-red/80 transform-none translate-y-0 h-10 w-10" />
+              <CarouselNext className="static bg-black/50 border-primary/30 hover:bg-primary/80 transform-none translate-y-0 h-10 w-10" />
             </div>
           </Carousel>
         </div>

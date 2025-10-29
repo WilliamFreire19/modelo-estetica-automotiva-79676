@@ -107,9 +107,9 @@ const GallerySection: React.FC = () => {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-3 reveal-on-scroll">
-            Nossa <span className="text-autolux-red">Galeria</span> de Transformações
+            Nossa <span className="text-primary">Galeria</span> de Transformações
           </h2>
-          <div className="w-24 h-1 bg-autolux-red mx-auto mb-6 reveal-on-scroll"></div>
+          <div className="w-24 h-1 bg-primary mx-auto mb-6 reveal-on-scroll"></div>
           <p className="text-gray-300 max-w-2xl mx-auto reveal-on-scroll">
             Confira os resultados impressionantes de nossos serviços de estética automotiva. Cada imagem representa nosso compromisso com a excelência e cuidado com os detalhes.
           </p>
@@ -121,7 +121,7 @@ const GallerySection: React.FC = () => {
             variant={filter === 'todos' ? 'default' : 'outline'}
             className={cn(
               "border-autolux-gray/30",
-              filter === 'todos' ? 'red-gradient' : 'hover:border-autolux-red/50'
+              filter === 'todos' ? 'gold-gradient' : 'hover:border-primary/50'
             )}
           >
             <Image size={16} className="mr-2" />
@@ -132,7 +132,7 @@ const GallerySection: React.FC = () => {
             variant={filter === 'antes-depois' ? 'default' : 'outline'}
             className={cn(
               "border-autolux-gray/30",
-              filter === 'antes-depois' ? 'red-gradient' : 'hover:border-autolux-red/50'
+              filter === 'antes-depois' ? 'gold-gradient' : 'hover:border-primary/50'
             )}
           >
             <Image size={16} className="mr-2" />
@@ -143,7 +143,7 @@ const GallerySection: React.FC = () => {
             variant={filter === 'processo' ? 'default' : 'outline'}
             className={cn(
               "border-autolux-gray/30",
-              filter === 'processo' ? 'red-gradient' : 'hover:border-autolux-red/50'
+              filter === 'processo' ? 'gold-gradient' : 'hover:border-primary/50'
             )}
           >
             <Image size={16} className="mr-2" />
@@ -167,7 +167,7 @@ const GallerySection: React.FC = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4">
                       <h3 className="text-white font-semibold">{image.title}</h3>
-                      <span className="inline-block px-3 py-1 text-xs bg-autolux-red text-white rounded-full mt-2">
+                      <span className="inline-block px-3 py-1 text-xs bg-primary text-primary-foreground rounded-full mt-2">
                         {image.category === 'antes-depois' ? 'Antes e Depois' : 'Processo'}
                       </span>
                     </div>
@@ -186,14 +186,14 @@ const GallerySection: React.FC = () => {
                   <div className="flex flex-col justify-between">
                     <div>
                       <h3 className="text-2xl font-bold mb-2">{image.title}</h3>
-                      <span className="inline-block px-3 py-1 text-xs bg-autolux-red text-white rounded-full mb-4">
+                      <span className="inline-block px-3 py-1 text-xs bg-primary text-primary-foreground rounded-full mb-4">
                         {image.category === 'antes-depois' ? 'Antes e Depois' : 'Processo'}
                       </span>
                       <p className="text-gray-300">{image.description}</p>
                     </div>
                     <div className="mt-auto">
                       <Button 
-                        className="red-gradient w-full"
+                        className="gold-gradient w-full"
                         onClick={() => handleServiceRequest(image.serviceId)}
                       >
                         Solicitar este serviço
