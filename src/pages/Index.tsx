@@ -20,7 +20,7 @@ const Index = () => {
     return cleanup;
     
     // Add metadata for better SEO
-    document.title = "Vip Lava Car | Estética Automotiva Erechim - RS";
+    document.title = "Show Car | Lavagem e Estética Automotiva Erechim - RS";
   }, []);
 
   return (
@@ -32,9 +32,9 @@ const Index = () => {
       <div className="py-16 section-black">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-autolux-white">
-            Por que escolher a <span className="text-[#FDCC01]">Vip Lava Car</span>?
+            Por que escolher a <span className="text-primary">Show Car</span>?
           </h2>
-          <div className="w-24 h-1 bg-[#FDCC01] mx-auto mb-12"></div>
+          <div className="w-24 h-1 bg-primary mx-auto mb-12"></div>
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card-white p-8 hover:scale-105 transition-transform duration-300">

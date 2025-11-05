@@ -16,8 +16,8 @@
     --popover: 0 0% 6%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 45 99% 50%;
-    --primary-foreground: 0 0% 0%;
+    --primary: 214 98% 42%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 35%;
     --secondary-foreground: 0 0% 98%;
@@ -70,8 +70,8 @@
     background: linear-gradient(135deg, #9F9EA1 0%, #aaadb0 50%, #9F9EA1 100%);
   }
 
-  .gold-gradient {
-    background: linear-gradient(135deg, #FDCC01 0%, #FFD700 50%, #FDCC01 100%);
+  .blue-gradient {
+    background: linear-gradient(135deg, #024CB9 0%, #0362E8 50%, #024CB9 100%);
   }
 
   .bg-blur {

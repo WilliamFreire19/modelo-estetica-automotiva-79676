@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Menu, X, Phone, Instagram, Facebook, MessageSquare } from 'lucide-react';
-import vipLavaCarLogo from '@/assets/vip-lava-car-logo.svg';
+import showCarLogo from '@/assets/show-car-logo.jpg';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,8 +47,8 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <a href="#home" className="h-12 md:h-16">
             <img 
-              src={vipLavaCarLogo}
-              alt="Vip Lava Car Logo" 
+              src={showCarLogo}
+              alt="Show Car Logo" 
               className="h-full"
             />
           </a>
@@ -60,7 +60,7 @@ const Header: React.FC = () => {
             <a 
               key={link.name}
               href={link.href}
-              className="text-white hover:text-[#FDCC01] transition-colors font-montserrat font-medium"
+              className="text-white hover:text-primary transition-colors font-montserrat font-medium"
             >
               {link.name}
             </a>
@@ -70,17 +70,13 @@ const Header: React.FC = () => {
         {/* Desktop Action Buttons */}
         <div className="hidden lg:flex items-center space-x-4">
           <div className="flex space-x-2">
-            <a href="https://instagram.com/viplavacar" target="_blank" rel="noopener noreferrer" 
-               className="text-white hover:text-[#FDCC01] transition-colors">
+            <a href="https://www.instagram.com/showcarlavagem" target="_blank" rel="noopener noreferrer" 
+               className="text-white hover:text-primary transition-colors">
               <Instagram size={20} />
-            </a>
-            <a href="https://facebook.com/viplavacar" target="_blank" rel="noopener noreferrer" 
-               className="text-white hover:text-[#FDCC01] transition-colors">
-              <Facebook size={20} />
             </a>
           </div>
           <Button 
-            className="gold-gradient text-black shadow-lg hover:opacity-90"
+            className="blue-gradient text-white shadow-lg hover:opacity-90"
             size="sm"
             onClick={scrollToContact}
           >
@@ -103,27 +99,23 @@ const Header: React.FC = () => {
                 key={link.name}
                 href={link.href}
                 onClick={closeMenu}
-                className="text-white hover:text-[#FDCC01] transition-colors font-montserrat font-medium py-2 border-b border-gray-800"
+                className="text-white hover:text-primary transition-colors font-montserrat font-medium py-2 border-b border-gray-800"
               >
                 {link.name}
               </a>
             ))}
             <div className="flex justify-between mt-4 pt-4">
               <div className="flex space-x-4">
-                <a href="https://instagram.com/viplavacar" target="_blank" rel="noopener noreferrer" 
-                   className="text-white hover:text-[#FDCC01] transition-colors">
+                <a href="https://www.instagram.com/showcarlavagem" target="_blank" rel="noopener noreferrer" 
+                   className="text-white hover:text-primary transition-colors">
                   <Instagram size={24} />
                 </a>
-                <a href="https://facebook.com/viplavacar" target="_blank" rel="noopener noreferrer" 
-                   className="text-white hover:text-[#FDCC01] transition-colors">
-                  <Facebook size={24} />
-                </a>
-                <a href="tel:+5554984217365" className="text-white hover:text-[#FDCC01] transition-colors">
+                <a href="tel:+5554992165296" className="text-white hover:text-primary transition-colors">
                   <Phone size={24} />
                 </a>
               </div>
               <Button 
-                className="gold-gradient text-black shadow-md hover:opacity-90"
+                className="blue-gradient text-white shadow-md hover:opacity-90"
                 size="sm"
                 onClick={scrollToContact}
               >

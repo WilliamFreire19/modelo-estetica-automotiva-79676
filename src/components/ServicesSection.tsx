@@ -29,7 +29,7 @@ interface ServiceDetails {
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, imageSrc, index, onClickSaibaMais }) => {
   return (
     <div className={`reveal-on-scroll ${index % 2 === 0 ? '' : 'md:mt-16'}`}>
-      <div className="bg-[#1a1a1a] rounded-lg overflow-hidden shadow-lg border border-autolux-gray/10 hover:border-[#FDCC01]/30 transition-all duration-300 h-full group">
+      <div className="bg-[#1a1a1a] rounded-lg overflow-hidden shadow-lg border border-autolux-gray/10 hover:border-primary/30 transition-all duration-300 h-full group">
         <div className="relative h-64 overflow-hidden">
           <img 
             src={imageSrc} 
@@ -43,7 +43,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, imageSrc,
           <p className="text-gray-300 mb-6 text-sm">{description}</p>
           <Button 
             variant="ghost" 
-            className="text-[#FDCC01] hover:text-black hover:bg-[#FDCC01] group"
+            className="text-primary hover:text-white hover:bg-primary group"
             onClick={onClickSaibaMais}
           >
             Saiba Mais 
@@ -60,157 +60,115 @@ const ServicesSection: React.FC = () => {
 
   const services = [
     {
-      title: "Lavação Completa",
-      description: "Lavagem externa e interna completa do veículo, incluindo limpeza de rodas, vidros e acabamentos.",
-      imageSrc: "https://img.freepik.com/free-photo/handsomen-man-black-sweater-washing-his-car_1157-35954.jpg",
-      fullDescription: "A Lavação Completa é o serviço básico essencial para manter seu veículo sempre limpo e bem cuidado. Inclui lavagem externa detalhada, limpeza de rodas, vidros, acabamentos e aspiração interna.",
-      priceRange: "Consulte",
-      duration: "1 a 2 horas",
+      title: "Lavagem Comercial Interna e Externa",
+      description: "Limpeza completa interna e externa do veículo, incluindo aspiração, lavagem de estofados e acabamento impecável.",
+      imageSrc: "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=800&h=600&fit=crop",
+      fullDescription: "Serviço completo de lavagem comercial que inclui limpeza interna detalhada com aspiração de carpetes e estofados, limpeza de painéis e acabamentos internos, além da lavagem externa completa com produtos de qualidade.",
+      priceRange: "A partir de R$ 80,00",
+      duration: "1h - 1h30min",
       process: [
-        "Pré-lavagem com espuma ativa",
-        "Lavagem manual detalhada",
-        "Limpeza de rodas e pneus",
-        "Secagem e finalização"
+        "Aspiração completa do interior",
+        "Limpeza de painéis e console",
+        "Lavagem externa com shampoo automotivo",
+        "Limpeza de vidros internos e externos",
+        "Aplicação de pretinho nos pneus",
+        "Secagem e acabamento final"
       ]
     },
     {
-      title: "Espelhamento / Polimento",
-      description: "Recuperação da pintura com remoção de riscos, oxidações e marcas de uso, devolvendo o brilho intenso do veículo.",
-      imageSrc: "https://img.freepik.com/free-photo/beautiful-car-polishing-service_23-2149212247.jpg",
-      fullDescription: "O Espelhamento é um processo avançado que remove riscos, marcas de swirl, oxidações e imperfeições da pintura do veículo. Utilizamos politrizes profissionais e compostos específicos para cada tipo de pintura, devolvendo o brilho profundo e aspecto de novo.",
-      priceRange: "Consulte",
-      duration: "4 a 8 horas",
+      title: "Lavagem Técnica Detalhada",
+      description: "Lavagem profissional com técnicas especializadas para limpeza profunda e proteção da pintura.",
+      imageSrc: "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=800&h=600&fit=crop",
+      fullDescription: "Lavagem técnica que utiliza métodos profissionais de duas baldes, clay bar quando necessário, e produtos específicos para cada tipo de superfície, garantindo limpeza profunda sem riscar a pintura.",
+      priceRange: "A partir de R$ 120,00",
+      duration: "2h - 2h30min",
       process: [
-        "Lavagem e descontaminação da pintura",
-        "Análise detalhada das imperfeições",
-        "Polimento em múltiplos estágios",
-        "Refinamento e acabamento espelhado"
+        "Pré-lavagem com foam lance",
+        "Lavagem com técnica de dois baldes",
+        "Descontaminação com clay bar (se necessário)",
+        "Limpeza detalhada de rodas e pneus",
+        "Lavagem dos vidros com produtos específicos",
+        "Secagem com microfibra de qualidade"
       ]
     },
     {
-      title: "Higienização Completa",
-      description: "Limpeza profunda de todo o interior do veículo, eliminando sujeira, bactérias e odores indesejados.",
-      imageSrc: "https://img.freepik.com/free-photo/beautiful-car-interior-clean-up-service_23-2149212256.jpg",
-      fullDescription: "A Higienização Completa é um processo minucioso que elimina sujeira, bactérias, ácaros e odores do interior do veículo. Utilizamos equipamentos profissionais e produtos específicos para garantir um ambiente limpo e saudável.",
-      priceRange: "Consulte",
-      duration: "3 a 5 horas",
+      title: "Lavagem de Bancos e Carpetes",
+      description: "Higienização profunda de bancos e carpetes com equipamentos especializados e produtos específicos.",
+      imageSrc: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=800&h=600&fit=crop",
+      fullDescription: "Serviço especializado de limpeza profunda de estofados, utilizando extratora e produtos de higienização que removem sujeira, manchas e odores, deixando o interior do veículo completamente renovado.",
+      priceRange: "A partir de R$ 100,00",
+      duration: "1h30min - 2h",
       process: [
-        "Aspiração profunda de todas as superfícies",
-        "Higienização de bancos e carpetes",
-        "Limpeza de painéis e forros",
-        "Tratamento anti-odor"
+        "Aspiração inicial dos bancos e carpetes",
+        "Aplicação de produto higienizador",
+        "Escovação para remoção de sujeira",
+        "Extração com equipamento profissional",
+        "Secagem e acabamento",
+        "Aplicação de protetor (opcional)"
       ]
     },
     {
-      title: "Aplicação de Cera",
-      description: "Proteção e brilho para a pintura do veículo com ceras de alta qualidade.",
-      imageSrc: "https://img.freepik.com/free-photo/close-up-car-care-process_23-2149193628.jpg",
-      fullDescription: "A Aplicação de Cera proporciona proteção à pintura e um brilho duradouro. Utilizamos ceras de alta qualidade que criam uma camada protetora contra raios UV, água e contaminantes.",
-      priceRange: "Consulte",
-      duration: "1 a 2 horas",
-      process: [
-        "Lavagem e descontaminação",
-        "Preparação da superfície",
-        "Aplicação da cera em camadas",
-        "Polimento final para máximo brilho"
-      ]
-    },
-    {
-      title: "Limpeza de Bancos",
-      description: "Limpeza profunda dos bancos do veículo, removendo manchas e sujeiras incrustadas.",
-      imageSrc: "https://img.freepik.com/premium-photo/applying-nanoceramic-coating-interior-leather-car-s-seat-brown-upholstery-by-worker-blue-gloves-with-sponge-bottle-chemical-composition-auto-service-industry_136863-1759.jpg",
-      fullDescription: "A Limpeza de Bancos é especializada na remoção de manchas, sujeiras e odores dos bancos. Trabalhamos com tecido, couro e outros materiais, utilizando produtos específicos para cada tipo.",
-      priceRange: "Consulte",
-      duration: "1 a 3 horas",
-      process: [
-        "Aspiração profunda",
-        "Pré-tratamento de manchas",
-        "Limpeza com produtos específicos",
-        "Hidratação (para bancos de couro)"
-      ]
-    },
-    {
-      title: "Lavação de Motor",
-      description: "Limpeza completa do compartimento do motor, removendo sujeiras e garantindo melhor desempenho.",
-      imageSrc: "https://img.freepik.com/free-photo/close-up-car-care-process_23-2149193578.jpg",
-      fullDescription: "A Lavação de Motor remove sujeiras, graxas e resíduos do compartimento do motor. Um motor limpo facilita a manutenção, melhora a dissipação de calor e valoriza o veículo.",
-      priceRange: "Consulte",
-      duration: "1 a 2 horas",
+      title: "Lavagem de Motor",
+      description: "Limpeza segura e profissional do motor, removendo sujeira e gordura acumuladas.",
+      imageSrc: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&h=600&fit=crop",
+      fullDescription: "Lavagem especializada do compartimento do motor com proteção de componentes elétricos e eletrônicos, utilizando produtos desengordurantes específicos e finalização com protetor de plásticos e borrachas.",
+      priceRange: "A partir de R$ 80,00",
+      duration: "40min - 1h",
       process: [
         "Proteção de componentes elétricos",
-        "Aplicação de produtos desengordurantes",
-        "Lavagem detalhada",
-        "Secagem e finalização"
+        "Aplicação de desengordurante",
+        "Limpeza com vapor ou jato d'água controlado",
+        "Secagem com ar comprimido",
+        "Aplicação de silicone revitalizador",
+        "Inspeção final"
       ]
     },
     {
-      title: "Remoção de Chuva Ácida",
-      description: "Tratamento especializado para remover manchas de chuva ácida e contaminantes da pintura.",
-      imageSrc: "https://img.freepik.com/free-photo/car-wash-detailing-station_1303-22325.jpg",
-      fullDescription: "A Remoção de Chuva Ácida elimina manchas causadas por precipitações contaminadas e poluição. Utilizamos produtos químicos específicos e técnicas que removem os contaminantes sem danificar a pintura.",
-      priceRange: "Consulte",
-      duration: "2 a 4 horas",
+      title: "Polimento",
+      description: "Remoção de riscos, manchas e oxidação da pintura, devolvendo o brilho original do veículo.",
+      imageSrc: "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=800&h=600&fit=crop",
+      fullDescription: "Serviço de correção de pintura que remove imperfeições, riscos leves, manchas e oxidação através de processo de polimento em múltiplas etapas, restaurando o brilho e profundidade da cor original.",
+      priceRange: "A partir de R$ 300,00",
+      duration: "4h - 6h",
       process: [
-        "Análise do nível de contaminação",
-        "Descontaminação química",
-        "Polimento localizado",
-        "Aplicação de selante protetor"
+        "Lavagem técnica preparatória",
+        "Descontaminação da pintura",
+        "Polimento de corte (remoção de riscos)",
+        "Polimento de refino",
+        "Aplicação de cera protetora ou selante",
+        "Inspeção e acabamento final"
       ]
     },
     {
-      title: "Troca de Filtro do Ar Condicionado",
-      description: "Serviço de manutenção para troca do filtro do ar condicionado, garantindo ar limpo e puro no interior do veículo.",
-      imageSrc: "https://img.freepik.com/premium-photo/wash-service-hand-car-vehicle-garage-cleaning-auto-maintenance-transportation-automobile-detailing-care_163305-256240.jpg",
-      fullDescription: "A Troca do Filtro do Ar Condicionado é um serviço de manutenção essencial que garante a qualidade do ar dentro do veículo, removendo poeira, pólen e bactérias.",
-      priceRange: "Consulte",
-      duration: "30 min a 1 hora",
+      title: "Recuperação de Faróis",
+      description: "Restauração de faróis opacos e amarelados, melhorando a iluminação e estética do veículo.",
+      imageSrc: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800&h=600&fit=crop",
+      fullDescription: "Processo de restauração que remove a oxidação e opacidade dos faróis através de lixamento progressivo e polimento, seguido de aplicação de verniz protetor UV para durabilidade prolongada.",
+      priceRange: "A partir de R$ 150,00",
+      duration: "1h30min - 2h",
       process: [
-        "Localização do filtro",
-        "Remoção do filtro antigo",
-        "Instalação do filtro novo",
-        "Verificação do sistema"
+        "Limpeza inicial dos faróis",
+        "Lixamento úmido progressivo (600 a 2000)",
+        "Polimento com massa específica",
+        "Aplicação de verniz protetor UV",
+        "Secagem e inspeção",
+        "Teste de iluminação"
       ]
     },
     {
-      title: "Higienização para Cabines de Caminhão",
-      description: "Serviço especializado de higienização completa para cabines de caminhão.",
-      imageSrc: "https://img.freepik.com/free-photo/happy-black-car-repairman-young-businessman-handshaking-auto-repair-shop_637285-4249.jpg",
-      fullDescription: "A Higienização para Cabines de Caminhão é um serviço especializado que atende as necessidades específicas de motoristas profissionais, garantindo um ambiente limpo e confortável.",
-      priceRange: "Consulte",
-      duration: "3 a 6 horas",
+      title: "Revitalização de Vidros",
+      description: "Limpeza profunda e polimento de vidros, removendo manchas, riscos leves e chuva ácida.",
+      imageSrc: "https://images.unsplash.com/photo-1622283477373-4e7942f72f8a?w=800&h=600&fit=crop",
+      fullDescription: "Tratamento especializado para vidros que remove manchas de água, chuva ácida, resíduos e micro riscos, utilizando compostos específicos e polimento, resultando em vidros cristalinos e visibilidade perfeita.",
+      priceRange: "A partir de R$ 120,00",
+      duration: "1h - 1h30min",
       process: [
-        "Limpeza completa de todos os compartimentos",
-        "Higienização de estofados e carpetes",
-        "Limpeza de painéis e controles",
-        "Desinfecção e tratamento anti-odor"
-      ]
-    },
-    {
-      title: "Planos Especiais para Frotas",
-      description: "Soluções personalizadas para empresas com frotas de veículos, com condições especiais.",
-      imageSrc: "https://img.freepik.com/free-photo/front-view-luxurious-modern-black-car-parked-indoors-daytime-garage_146671-17010.jpg",
-      fullDescription: "Os Planos Especiais para Frotas oferecem soluções personalizadas para empresas que precisam manter seus veículos sempre limpos e bem apresentados. Oferecemos condições especiais e agendamento flexível.",
-      priceRange: "Consulte",
-      duration: "Variável",
-      process: [
-        "Análise das necessidades da frota",
-        "Elaboração de plano personalizado",
-        "Agendamento flexível",
-        "Relatórios de serviços realizados"
-      ]
-    },
-    {
-      title: "Lavação de Moto",
-      description: "Serviço completo de lavação para motocicletas, com atenção aos detalhes específicos.",
-      imageSrc: "https://img.freepik.com/free-photo/car-wash-detailing-station_1303-22325.jpg",
-      fullDescription: "A Lavação de Moto é um serviço especializado que cuida de todos os detalhes da sua motocicleta, desde a lavagem externa até a limpeza de componentes específicos.",
-      priceRange: "Consulte",
-      duration: "1 a 2 horas",
-      process: [
-        "Lavagem externa completa",
-        "Limpeza de rodas e corrente",
-        "Limpeza de componentes cromados",
-        "Secagem e finalização"
+        "Limpeza inicial com produto específico",
+        "Aplicação de composto para remoção de manchas",
+        "Polimento com máquina e feltro específico",
+        "Limpeza final com microfibra",
+        "Aplicação de repelente de água (opcional)",
+        "Inspeção de transparência"
       ]
     }
   ];
@@ -228,12 +186,12 @@ const ServicesSection: React.FC = () => {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-3 reveal-on-scroll">
-            Nossos <span className="text-[#FDCC01]">Serviços</span>
+            Nossos <span className="text-primary">Serviços</span>
           </h2>
           <p className="max-w-2xl mx-auto text-gray-300 reveal-on-scroll">
             Soluções completas de estética automotiva com produtos premium e técnicas avançadas para veículos exigentes.
           </p>
-          <div className="w-24 h-1 bg-[#FDCC01] mx-auto mt-4 reveal-on-scroll"></div>
+          <div className="w-24 h-1 bg-primary mx-auto mt-4 reveal-on-scroll"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -265,17 +223,17 @@ const ServicesSection: React.FC = () => {
               <div className="space-y-4 mt-2">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-autolux-black/50 p-4 rounded-lg">
-                    <h4 className="text-[#FDCC01] font-medium mb-1">Faixa de Preço</h4>
+                    <h4 className="text-primary font-medium mb-1">Faixa de Preço</h4>
                     <p className="text-white text-lg font-bold">{services[openServiceIndex].priceRange}</p>
                   </div>
                   <div className="bg-autolux-black/50 p-4 rounded-lg">
-                    <h4 className="text-[#FDCC01] font-medium mb-1">Tempo Estimado</h4>
+                    <h4 className="text-primary font-medium mb-1">Tempo Estimado</h4>
                     <p className="text-white text-lg font-bold">{services[openServiceIndex].duration}</p>
                   </div>
                 </div>
                 
                 <div className="bg-autolux-black/50 p-4 rounded-lg">
-                  <h4 className="text-[#FDCC01] font-medium mb-2">Processo de Aplicação</h4>
+                  <h4 className="text-primary font-medium mb-2">Processo de Aplicação</h4>
                   <ul className="list-disc list-inside space-y-1 text-gray-200">
                     {services[openServiceIndex].process.map((step, i) => (
                       <li key={i}>{step}</li>
@@ -285,7 +243,7 @@ const ServicesSection: React.FC = () => {
                 
                 <div className="pt-4">
                   <Button 
-                    className="w-full gold-gradient hover:opacity-90 text-black font-medium py-6"
+                    className="w-full blue-gradient hover:opacity-90 text-white font-medium py-6"
                     onClick={() => {
                       closeServiceDetails();
                       // Scroll to contact form

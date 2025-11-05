@@ -39,14 +39,15 @@ const HeroSection: React.FC = () => {
       <div className="container mx-auto px-4 z-20 pt-20">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in text-autolux-white leading-tight">
-            Vip Lava Car: O Cuidado Completo<br />
-            <span className="text-[#FDCC01]">que Seu Veículo Merece em Erechim.</span>
+            Show Car<br />
+            <span className="text-primary">Lavagem e Estética Automotiva</span><br />
+            em Erechim
           </h1>
           <p className="text-xl md:text-2xl mb-8 animate-fade-in-slow text-gray-300 font-light">
-            Estética Automotiva, Limpeza Profunda e Manutenção. Qualidade e Confiança Comprovadas.
+            Lavagem Profissional, Polimento e Estética Completa. Qualidade e dedicação em cada detalhe.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-slow">
-            <Button size="lg" className="gold-gradient hover:opacity-90 text-black font-medium px-8 py-6 text-lg shadow-[0_4px_20px_rgba(253,204,1,0.5)]" onClick={scrollToContact}>
+            <Button size="lg" className="blue-gradient hover:opacity-90 text-white font-medium px-8 py-6 text-lg shadow-[0_4px_20px_rgba(2,76,185,0.5)]" onClick={scrollToContact}>
               <MessageSquare className="mr-2 h-5 w-5" /> Agende Seu Horário
             </Button>
             <Button size="lg" variant="outline" className="bg-white/10 border-white text-autolux-white hover:bg-white/20 font-medium px-8 py-6 text-lg" onClick={scrollToServices}>

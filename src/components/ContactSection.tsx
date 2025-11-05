@@ -66,7 +66,7 @@ const ContactSection: React.FC = () => {
     
     // Create WhatsApp URL with form data
     const message = `Olá! Meu nome é ${formData.name}. Gostaria de um orçamento para meu ${formData.carModel} para os serviços de: ${serviceNames}.`;
-    const whatsappURL = `https://wa.me/5554984217365?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/5554992165296?text=${encodeURIComponent(message)}`;
     
     // Open WhatsApp with pre-filled message
     window.open(whatsappURL, '_blank');
@@ -89,12 +89,12 @@ const ContactSection: React.FC = () => {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-3 reveal-on-scroll">
-            Entre em <span className="text-[#FDCC01]">Contato</span>
+            Entre em <span className="text-primary">Contato</span>
           </h2>
           <p className="max-w-2xl mx-auto text-gray-300 reveal-on-scroll">
             Solicite um orçamento ou tire suas dúvidas com nossa equipe especializada.
           </p>
-          <div className="w-24 h-1 bg-[#FDCC01] mx-auto mt-4 reveal-on-scroll"></div>
+          <div className="w-24 h-1 bg-primary mx-auto mt-4 reveal-on-scroll"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -144,8 +144,8 @@ const ContactSection: React.FC = () => {
                             relative flex items-center justify-center p-4 rounded-lg cursor-pointer
                             transition-all duration-300 border-2
                             ${formData.services.includes(service.id) 
-                              ? 'bg-[#FDCC01]/10 border-[#FDCC01] shadow-lg shadow-[#FDCC01]/20' 
-                              : 'bg-[#0a0a0a] border-autolux-gray/20 hover:border-[#FDCC01]/50 hover:bg-[#FDCC01]/5'
+                              ? 'bg-primary/10 border-primary shadow-lg shadow-primary/20' 
+                              : 'bg-[#0a0a0a] border-autolux-gray/20 hover:border-primary/50 hover:bg-primary/5'
                             }
                           `}
                         >
@@ -155,11 +155,11 @@ const ContactSection: React.FC = () => {
                             onChange={() => handleServiceChange(service.id)}
                             className="sr-only"
                           />
-                          <span className={`text-sm font-medium text-center ${formData.services.includes(service.id) ? 'text-[#FDCC01]' : 'text-gray-300'}`}>
+                          <span className={`text-sm font-medium text-center ${formData.services.includes(service.id) ? 'text-primary' : 'text-gray-300'}`}>
                             {service.name}
                           </span>
                           {formData.services.includes(service.id) && (
-                            <div className="absolute top-2 right-2 w-5 h-5 bg-[#FDCC01] rounded-full flex items-center justify-center">
+                            <div className="absolute top-2 right-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center">
                               <svg className="w-3 h-3 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                                 <path d="M5 13l4 4L19 7"></path>
                               </svg>
@@ -173,7 +173,7 @@ const ContactSection: React.FC = () => {
                   <div className="pt-4">
                     <Button 
                       type="submit" 
-                      className="w-full gold-gradient hover:opacity-90 text-black font-medium py-6 shadow-[0_4px_12px_rgba(253,204,1,0.3)] flex items-center justify-center gap-2"
+                      className="w-full blue-gradient hover:opacity-90 text-white font-medium py-6 shadow-[0_4px_12px_rgba(2,76,185,0.3)] flex items-center justify-center gap-2"
                     >
                       <MessageSquare className="h-5 w-5" />
                       Solicitar Orçamento
@@ -189,33 +189,33 @@ const ContactSection: React.FC = () => {
               <h3 className="text-2xl font-bold mb-6">Informações de Contato</h3>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <Phone className="h-6 w-6 text-[#FDCC01] mr-4 mt-1" />
+                  <Phone className="h-6 w-6 text-primary mr-4 mt-1" />
                   <div>
                     <p className="font-bold">Telefone</p>
-                    <a href="tel:+5554984217365" className="text-gray-300 hover:text-[#FDCC01] transition-colors">
-                      (54) 98421-7365
+                    <a href="tel:+5554992165296" className="text-gray-300 hover:text-primary transition-colors">
+                      (54) 99216-5296
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <MessageSquare className="h-6 w-6 text-[#FDCC01] mr-4 mt-1" />
+                  <MessageSquare className="h-6 w-6 text-primary mr-4 mt-1" />
                   <div>
                     <p className="font-bold">WhatsApp</p>
-                    <a href="https://wa.me/5554984217365" className="text-gray-300 hover:text-[#FDCC01] transition-colors">
-                      (54) 98421-7365
+                    <a href="https://wa.me/5554992165296" className="text-gray-300 hover:text-primary transition-colors">
+                      (54) 99216-5296
                     </a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <MapPin className="h-6 w-6 text-[#FDCC01] mr-4 mt-1" />
+                  <MapPin className="h-6 w-6 text-primary mr-4 mt-1" />
                   <div>
                     <p className="font-bold">Endereço</p>
                     <address className="text-gray-300 not-italic">
-                      R. Léo Neuls, 221<br />
-                      Espirito Santo, Erechim - RS<br />
-                      CEP: 99711-702
+                      Rua Léo Neuls, 665<br />
+                      Bairro Aldo Arioli<br />
+                      Erechim - RS
                     </address>
                   </div>
                 </div>
