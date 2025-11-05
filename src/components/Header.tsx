@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Menu, X, Phone, Instagram, Facebook, MessageSquare } from 'lucide-react';
-import showCarLogo from '@/assets/show-car-logo.jpg';
+import showCarLogo from '@/assets/show-car-logo.png';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
