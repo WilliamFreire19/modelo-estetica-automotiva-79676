@@ -67,14 +67,14 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				autolux: {
+				fernando: {
 					black: '#0f0f0f',
-					red: '#d90429',
+					wine: '#741012',
 					gray: '#5a5a5a',
 					lightgray: '#8a8a8a',
-					white: '#ffffff',  // Pure white
-					'white-transparent': 'rgba(255, 255, 255, 0.6)',  // Semi-transparent white
-					'white-muted': '#f0f0f0',  // Slightly off-white
+					white: '#ffffff',
+					'white-transparent': 'rgba(255, 255, 255, 0.6)',
+					'white-muted': '#f0f0f0',
 				}
 			},
 			borderRadius: {

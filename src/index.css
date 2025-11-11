@@ -16,7 +16,7 @@
     --popover: 0 0% 6%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 214 98% 42%;
+    --primary: 358 78% 26%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 35%;
@@ -54,7 +54,7 @@
   }
 
   body {
-    @apply bg-autolux-white text-foreground font-opensans;
+    @apply bg-fernando-white text-foreground font-opensans;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -70,8 +70,8 @@
     background: linear-gradient(135deg, #9F9EA1 0%, #aaadb0 50%, #9F9EA1 100%);
   }
 
-  .blue-gradient {
-    background: linear-gradient(135deg, #024CB9 0%, #0362E8 50%, #024CB9 100%);
+  .wine-gradient {
+    background: linear-gradient(135deg, #741012 0%, #9a1518 50%, #741012 100%);
   }
 
   .bg-blur {
@@ -96,20 +96,20 @@
   
   /* White section styles */
   .section-white {
-    @apply bg-autolux-white text-autolux-black;
+    @apply bg-fernando-white text-fernando-black;
   }
   
   .card-white {
-    @apply bg-autolux-white text-autolux-black shadow-lg rounded-lg;
+    @apply bg-fernando-white text-fernando-black shadow-lg rounded-lg;
   }
   
   .glass-white {
-    @apply bg-autolux-white/90 backdrop-blur-md text-autolux-black shadow-xl border border-white/20;
+    @apply bg-fernando-white/90 backdrop-blur-md text-fernando-black shadow-xl border border-white/20;
   }
   
   /* Black section styles */
   .section-black {
-    @apply bg-autolux-black text-autolux-white;
+    @apply bg-fernando-black text-fernando-white;
   }
   
   /* Light to dark gradient for smoother transitions */

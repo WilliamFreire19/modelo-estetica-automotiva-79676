@@ -13,10 +13,10 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-autolux-black">
+    <section id="home" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-fernando-black">
       {/* Background Video with Overlay */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-autolux-black/80 via-autolux-black/60 to-autolux-black z-10 backdrop-blur-sm"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-fernando-black/80 via-fernando-black/60 to-fernando-black z-10 backdrop-blur-sm"></div>
         <video 
           key="hero-video-playback"
           autoPlay 
@@ -38,19 +38,19 @@ const HeroSection: React.FC = () => {
       {/* Content */}
       <div className="container mx-auto px-4 z-20 pt-20">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in text-autolux-white leading-tight">
-            Show Car<br />
-            <span className="text-primary">Lavagem e Estética Automotiva</span><br />
-            em Erechim
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in text-fernando-white leading-tight">
+            Fernando<br />
+            <span className="text-primary">Auto Pintura</span><br />
+            em Criciúma
           </h1>
           <p className="text-xl md:text-2xl mb-8 animate-fade-in-slow text-gray-300 font-light">
-            Lavagem Profissional, Polimento e Estética Completa. Qualidade e dedicação em cada detalhe.
+            Funilaria e Pintura de Excelência. Estética Automotiva com Polimento Técnico e Vitrificação Gyeon Official.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-slow">
-            <Button size="lg" className="blue-gradient hover:opacity-90 text-white font-medium px-8 py-6 text-lg shadow-[0_4px_20px_rgba(2,76,185,0.5)]" onClick={scrollToContact}>
-              <MessageSquare className="mr-2 h-5 w-5" /> Agende Seu Horário
+            <Button size="lg" className="wine-gradient hover:opacity-90 text-white font-medium px-8 py-6 text-lg shadow-[0_4px_20px_rgba(116,16,18,0.5)]" onClick={scrollToContact}>
+              <MessageSquare className="mr-2 h-5 w-5" /> Solicite Orçamento
             </Button>
-            <Button size="lg" variant="outline" className="bg-white/10 border-white text-autolux-white hover:bg-white/20 font-medium px-8 py-6 text-lg" onClick={scrollToServices}>
+            <Button size="lg" variant="outline" className="bg-white/10 border-white text-fernando-white hover:bg-white/20 font-medium px-8 py-6 text-lg" onClick={scrollToServices}>
               Conheça Nossos Serviços
             </Button>
           </div>
@@ -58,7 +58,7 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Decorative element */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-autolux-white to-transparent z-20"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-fernando-white to-transparent z-20"></div>
     </section>
   );
 };

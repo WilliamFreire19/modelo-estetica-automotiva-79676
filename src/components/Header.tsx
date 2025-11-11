@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Menu, X, Phone, Instagram, Facebook, MessageSquare } from 'lucide-react';
-import showCarLogo from '@/assets/show-car-logo.png';
+import fernandoLogo from '@/assets/fernando-auto-pintura-logo.png';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +31,7 @@ const Header: React.FC = () => {
   };
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
+    { name: 'Início', href: '#home' },
     { name: 'Sobre', href: '#sobre' },
     { name: 'Serviços', href: '#servicos' },
     { name: 'Galeria', href: '#galeria' },
@@ -41,14 +41,14 @@ const Header: React.FC = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-autolux-black/90 bg-blur py-2 shadow-lg' : 'bg-transparent py-4'
+      isScrolled ? 'bg-fernando-black/90 bg-blur py-2 shadow-lg' : 'bg-transparent py-4'
     }`}>
       <div className="container mx-auto flex justify-between items-center px-4">
         <div className="flex items-center">
           <a href="#home" className="h-12 md:h-16">
             <img 
-              src={showCarLogo}
-              alt="Show Car Logo" 
+              src={fernandoLogo}
+              alt="Fernando Auto Pintura Logo" 
               className="h-full"
             />
           </a>
@@ -70,17 +70,16 @@ const Header: React.FC = () => {
         {/* Desktop Action Buttons */}
         <div className="hidden lg:flex items-center space-x-4">
           <div className="flex space-x-2">
-            <a href="https://www.instagram.com/showcarlavagem" target="_blank" rel="noopener noreferrer" 
-               className="text-white hover:text-primary transition-colors">
-              <Instagram size={20} />
+            <a href="tel:+554834429554" className="text-white hover:text-primary transition-colors">
+              <Phone size={20} />
             </a>
           </div>
           <Button 
-            className="blue-gradient text-white shadow-lg hover:opacity-90"
+            className="wine-gradient text-white shadow-lg hover:opacity-90"
             size="sm"
             onClick={scrollToContact}
           >
-            <MessageSquare className="mr-2 h-4 w-4" /> Agende Agora
+            <MessageSquare className="mr-2 h-4 w-4" /> Solicite Orçamento
           </Button>
         </div>
 
@@ -92,7 +91,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="lg:hidden bg-autolux-black/95 absolute top-full left-0 right-0 py-4 px-4 shadow-lg backdrop-blur-md animate-slide-in-right">
+        <div className="lg:hidden bg-fernando-black/95 absolute top-full left-0 right-0 py-4 px-4 shadow-lg backdrop-blur-md animate-slide-in-right">
           <nav className="flex flex-col space-y-4">
             {navLinks.map((link) => (
               <a 
@@ -106,20 +105,16 @@ const Header: React.FC = () => {
             ))}
             <div className="flex justify-between mt-4 pt-4">
               <div className="flex space-x-4">
-                <a href="https://www.instagram.com/showcarlavagem" target="_blank" rel="noopener noreferrer" 
-                   className="text-white hover:text-primary transition-colors">
-                  <Instagram size={24} />
-                </a>
-                <a href="tel:+5554992165296" className="text-white hover:text-primary transition-colors">
+                <a href="tel:+554834429554" className="text-white hover:text-primary transition-colors">
                   <Phone size={24} />
                 </a>
               </div>
               <Button 
-                className="blue-gradient text-white shadow-md hover:opacity-90"
+                className="wine-gradient text-white shadow-md hover:opacity-90"
                 size="sm"
                 onClick={scrollToContact}
               >
-                <MessageSquare className="mr-2 h-4 w-4" /> Agende
+                <MessageSquare className="mr-2 h-4 w-4" /> Orçamento
               </Button>
             </div>
           </nav>

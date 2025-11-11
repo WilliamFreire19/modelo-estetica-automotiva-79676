@@ -66,7 +66,7 @@ const ContactSection: React.FC = () => {
     
     // Create WhatsApp URL with form data
     const message = `Olá! Meu nome é ${formData.name}. Gostaria de um orçamento para meu ${formData.carModel} para os serviços de: ${serviceNames}.`;
-    const whatsappURL = `https://wa.me/5554992165296?text=${encodeURIComponent(message)}`;
+    const whatsappURL = `https://wa.me/5548996140000?text=${encodeURIComponent(message)}`;
     
     // Open WhatsApp with pre-filled message
     window.open(whatsappURL, '_blank');
@@ -85,7 +85,7 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contato" className="section bg-gradient-to-b from-autolux-black to-[#1a1a1a]">
+    <section id="contato" className="section bg-gradient-to-b from-fernando-black to-[#1a1a1a]">
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-3 reveal-on-scroll">
@@ -99,7 +99,7 @@ const ContactSection: React.FC = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div className="reveal-on-scroll">
-            <div className="bg-[#1a1a1a] border border-autolux-gray/20 rounded-lg p-8 shadow-lg">
+            <div className="bg-[#1a1a1a] border border-fernando-gray/20 rounded-lg p-8 shadow-lg">
               <h3 className="text-2xl font-bold mb-6">Solicite um Orçamento</h3>
               
               <form onSubmit={handleSubmit}>
@@ -114,7 +114,7 @@ const ContactSection: React.FC = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-autolux-black border border-autolux-gray/30 rounded-md focus:outline-none focus:ring-2 focus:ring-autolux-red/50 focus:border-transparent"
+                      className="w-full px-4 py-3 bg-fernando-black border border-fernando-gray/30 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent text-white"
                     />
                   </div>
                   
@@ -128,7 +128,7 @@ const ContactSection: React.FC = () => {
                       name="carModel"
                       value={formData.carModel}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-autolux-black border border-autolux-gray/30 rounded-md focus:outline-none focus:ring-2 focus:ring-autolux-red/50 focus:border-transparent"
+                      className="w-full px-4 py-3 bg-fernando-black border border-fernando-gray/30 rounded-md focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-transparent text-white"
                     />
                   </div>
                   
@@ -145,7 +145,7 @@ const ContactSection: React.FC = () => {
                             transition-all duration-300 border-2
                             ${formData.services.includes(service.id) 
                               ? 'bg-primary/10 border-primary shadow-lg shadow-primary/20' 
-                              : 'bg-[#0a0a0a] border-autolux-gray/20 hover:border-primary/50 hover:bg-primary/5'
+                              : 'bg-[#0a0a0a] border-fernando-gray/20 hover:border-primary/50 hover:bg-primary/5'
                             }
                           `}
                         >
@@ -173,7 +173,7 @@ const ContactSection: React.FC = () => {
                   <div className="pt-4">
                     <Button 
                       type="submit" 
-                      className="w-full blue-gradient hover:opacity-90 text-white font-medium py-6 shadow-[0_4px_12px_rgba(2,76,185,0.3)] flex items-center justify-center gap-2"
+                      className="w-full wine-gradient hover:opacity-90 text-white font-medium py-6 shadow-[0_4px_12px_rgba(116,16,18,0.3)] flex items-center justify-center gap-2"
                     >
                       <MessageSquare className="h-5 w-5" />
                       Solicitar Orçamento
@@ -192,8 +192,8 @@ const ContactSection: React.FC = () => {
                   <Phone className="h-6 w-6 text-primary mr-4 mt-1" />
                   <div>
                     <p className="font-bold">Telefone</p>
-                    <a href="tel:+5554992165296" className="text-gray-300 hover:text-primary transition-colors">
-                      (54) 99216-5296
+                    <a href="tel:+554834429554" className="text-gray-300 hover:text-primary transition-colors">
+                      (48) 3442-9554
                     </a>
                   </div>
                 </div>
@@ -202,8 +202,8 @@ const ContactSection: React.FC = () => {
                   <MessageSquare className="h-6 w-6 text-primary mr-4 mt-1" />
                   <div>
                     <p className="font-bold">WhatsApp</p>
-                    <a href="https://wa.me/5554992165296" className="text-gray-300 hover:text-primary transition-colors">
-                      (54) 99216-5296
+                    <a href="https://wa.me/5548996140000" className="text-gray-300 hover:text-primary transition-colors">
+                      (48) 99614-****
                     </a>
                   </div>
                 </div>
@@ -213,9 +213,9 @@ const ContactSection: React.FC = () => {
                   <div>
                     <p className="font-bold">Endereço</p>
                     <address className="text-gray-300 not-italic">
-                      Rua Léo Neuls, 665<br />
-                      Bairro Aldo Arioli<br />
-                      Erechim - RS
+                      R. Carlos Colombo, 837<br />
+                      Vila Isabel<br />
+                      Criciúma - SC, 88818-010
                     </address>
                   </div>
                 </div>
@@ -223,10 +223,10 @@ const ContactSection: React.FC = () => {
             </div>
             
             <div className="space-y-4">
-              <div className="h-[300px] rounded-lg overflow-hidden border border-autolux-gray/20 shadow-lg">
+              <div className="h-[300px] rounded-lg overflow-hidden border border-fernando-gray/20 shadow-lg">
                 <iframe 
                   title="Mapa de localização"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.4!2d-52.2746!3d-27.6340!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e2ffd36e72e58d%3A0x4b8e5e8b5e8e5e8!2sR.%20L%C3%A9o%20Neuls%2C%20221%20-%20Espirito%20Santo%2C%20Erechim%20-%20RS%2C%2099711-702!5e0!3m2!1spt-BR!2sbr!4v1712613514945!5m2!1spt-BR!2sbr" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3524.2!2d-49.3697!3d-28.6773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9521438a1c5e8b5d%3A0x7f7f7f7f7f7f7f7f!2sR.%20Carlos%20Colombo%2C%20837%20-%20Vila%20Isabel%2C%20Crici%C3%BAma%20-%20SC%2C%2088818-010!5e0!3m2!1spt-BR!2sbr!4v1712613514945!5m2!1spt-BR!2sbr" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 
@@ -235,7 +235,7 @@ const ContactSection: React.FC = () => {
                 ></iframe>
               </div>
               <Button
-                onClick={() => window.open('https://waze.com/ul?ll=-27.6340,-52.2746&navigate=yes', '_blank')}
+                onClick={() => window.open('https://waze.com/ul?ll=-28.6773,-49.3697&navigate=yes', '_blank')}
                 className="w-full bg-[#33CCFF] hover:bg-[#2AB8E6] text-white font-medium py-3 flex items-center justify-center gap-2"
               >
                 <Navigation className="h-5 w-5" />

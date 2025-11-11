@@ -4,31 +4,29 @@ import { Facebook, Instagram, MessageSquare, Phone } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#0a0a0a] border-t border-autolux-gray/20 text-white">
+    <footer className="bg-[#0a0a0a] border-t border-fernando-gray/20 text-white">
       <div className="container mx-auto">
         <div className="py-12 px-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10">
           <div>
             <div className="text-2xl font-montserrat font-bold mb-6">
-              <span className="text-white">SHOW</span>
-              <span className="text-primary"> CAR</span>
+              <span className="text-white">FERNANDO</span>
+              <span className="text-primary"> AUTO PINTURA</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-xs">
-              Lavagem e Estética Automotiva em Erechim - RS. Serviços profissionais de limpeza, polimento, recuperação de faróis e revitalização de vidros.
+              Funilaria e Pintura Automotiva em Criciúma - SC. Especialistas em repintura, polimento técnico e vitrificação Gyeon Official.
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://www.instagram.com/showcarlavagem" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="h-10 w-10 rounded-full flex items-center justify-center border border-autolux-gray hover:border-primary transition-colors"
+                href="tel:+554834429554" 
+                className="h-10 w-10 rounded-full flex items-center justify-center border border-fernando-gray hover:border-primary transition-colors"
               >
-                <Instagram size={18} className="text-gray-400 hover:text-white transition-colors" />
+                <Phone size={18} className="text-gray-400 hover:text-white transition-colors" />
               </a>
               <a 
-                href="https://wa.me/5554992165296" 
+                href="https://wa.me/5548996140000" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="h-10 w-10 rounded-full flex items-center justify-center border border-autolux-gray hover:border-primary transition-colors"
+                className="h-10 w-10 rounded-full flex items-center justify-center border border-fernando-gray hover:border-primary transition-colors"
               >
                 <MessageSquare size={18} className="text-gray-400 hover:text-white transition-colors" />
               </a>
@@ -63,25 +61,19 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-bold mb-6">Serviços</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#servicos" className="text-gray-400 hover:text-primary transition-colors">Lavagem Comercial</a>
+                <a href="#servicos" className="text-gray-400 hover:text-primary transition-colors">Funilaria e Pintura</a>
               </li>
               <li>
-                <a href="#servicos" className="text-gray-400 hover:text-primary transition-colors">Lavagem Técnica</a>
+                <a href="#servicos" className="text-gray-400 hover:text-primary transition-colors">Repintura</a>
               </li>
               <li>
-                <a href="#servicos" className="text-gray-400 hover:text-primary transition-colors">Lavagem de Bancos</a>
+                <a href="#servicos" className="text-gray-400 hover:text-primary transition-colors">Martelinho de Ouro</a>
               </li>
               <li>
-                <a href="#servicos" className="text-gray-400 hover:text-primary transition-colors">Lavagem de Motor</a>
+                <a href="#servicos" className="text-gray-400 hover:text-primary transition-colors">Polimento Técnico</a>
               </li>
               <li>
-                <a href="#servicos" className="text-gray-400 hover:text-primary transition-colors">Polimento</a>
-              </li>
-              <li>
-                <a href="#servicos" className="text-gray-400 hover:text-primary transition-colors">Recuperação de Faróis</a>
-              </li>
-              <li>
-                <a href="#servicos" className="text-gray-400 hover:text-primary transition-colors">Revitalização de Vidros</a>
+                <a href="#servicos" className="text-gray-400 hover:text-primary transition-colors">Vitrificação Gyeon</a>
               </li>
             </ul>
           </div>
@@ -92,25 +84,25 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <Phone className="h-5 w-5 text-primary mr-3 mt-1" />
                 <div>
-                  <p className="text-gray-400">(54) 99216-5296</p>
-                  <a href="tel:+5554992165296" className="text-xs text-primary hover:underline">Ligar agora</a>
+                  <p className="text-gray-400">(48) 3442-9554</p>
+                  <a href="tel:+554834429554" className="text-xs text-primary hover:underline">Ligar agora</a>
                 </div>
               </li>
               <li className="flex items-start">
                 <MessageSquare className="h-5 w-5 text-primary mr-3 mt-1" />
                 <div>
                   <p className="text-gray-400">WhatsApp</p>
-                  <a href="https://wa.me/5554992165296" className="text-xs text-primary hover:underline">Enviar mensagem</a>
+                  <a href="https://wa.me/5548996140000" className="text-xs text-primary hover:underline">Enviar mensagem</a>
                 </div>
               </li>
             </ul>
           </div>
         </div>
         
-        <div className="border-t border-autolux-gray/20 py-8 px-4">
+        <div className="border-t border-fernando-gray/20 py-8 px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Show Car Lavagem. Todos os direitos reservados.
+              &copy; {new Date().getFullYear()} Fernando Auto Pintura. Todos os direitos reservados.
             </p>
             <div className="flex space-x-4 text-sm text-gray-500">
               <a href="/privacidade" className="hover:text-primary transition-colors">Política de Privacidade</a>
